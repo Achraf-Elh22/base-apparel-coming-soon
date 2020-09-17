@@ -1,11 +1,3 @@
-:root {
-  --DesaturatedRed-color: hsl(0, 36%, 70%);
-  --SoftRed-color: hsl(0, 93%, 68%);
-  --DarkGrayishRed-color: hsl(0, 6%, 24%);
-  --btn-gradients: 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%);
-  --btn-hoverGradients: 135deg, hsl(0, 41%, 93%), hsl(0, 80%, 86%);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -47,13 +39,14 @@ body {
 /* LOGO */
 .container-left .logo {
   margin-bottom: 90px;
+  margin-top: -20px;
 }
 
 /* Heading */
 .container-left .l-heading {
   font-size: 5rem;
   text-transform: uppercase;
-  color: var(--DarkGrayishRed-color);
+  color: hsl(0, 6%, 24%);
   font-weight: 400;
   letter-spacing: 16px;
   padding-bottom: 15px;
@@ -61,11 +54,11 @@ body {
 
 .container-left .l-heading span {
   font-weight: 300;
-  color: var(--DesaturatedRed-color);
+  color: hsl(0, 36%, 70%);
 }
 
 .container-left .description {
-  color: var(--DesaturatedRed-color);
+  color: hsl(0, 36%, 70%);
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -73,14 +66,14 @@ body {
 .container-left .form input {
   width: 100%;
   height: 50px;
-  border: 1px solid var(--DesaturatedRed-color);
+  border: 1px solid hsl(0, 36%, 70%);
   border-radius: 50px;
   padding: 20px 30px;
   outline: none;
 }
 
 .container-left .form input::placeholder {
-  color: var(--DesaturatedRed-color);
+  color: hsl(0, 36%, 70%);
 }
 
 .container-left .form {
@@ -90,7 +83,7 @@ body {
 .container-left .form .btn-submit {
   width: 20%;
   height: 50px;
-  background: linear-gradient(var(--btn-gradients));
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   border: none;
   border-radius: 50px;
   position: absolute;
@@ -101,7 +94,7 @@ body {
 }
 
 .container-left .form .btn-submit:hover {
-  background-image: linear-gradient(var(--btn-hoverGradients));
+  background-image: linear-gradient(135deg, hsl(0, 41%, 93%), hsl(0, 80%, 86%));
   transform: scale(1.1);
 }
 
@@ -117,12 +110,12 @@ body {
 
 .container-left .form .error-desc {
   margin-top: 20px;
-  color: var(--SoftRed-color);
+  color: hsl(0, 93%, 68%);
   margin-bottom: 20px;
 }
 
 .container-left .form .success {
-  color: var(--DesaturatedRed-color);
+  color: hsl(0, 36%, 70%);
   display: block;
   margin-bottom: 20px;
 }
